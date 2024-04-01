@@ -1,0 +1,68 @@
+name: Feature Request
+description: Request a new feature or change for nvg, or requests for this project
+title: "[Request]: "
+labels: unconfirmed feature request
+body:
+  - type: input
+    attributes:
+      label: Summary
+      description: Summarize your request in one sentence.
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: The scope of the request
+      description: Select what you are requesting for nvg.
+      options:
+        - nvg
+        - Project management
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Request details
+      description: Describe your request in as much detail as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Reason for request
+      description: Describe in as much detail as possible why you made this request.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Current situation
+      description: What problems are you currently experiencing?
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Problem with request
+      description: What problems can this request cause?
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: If you have something to let us know, write it down.
+    validations:
+      required: false
+
+  - type: checkboxes
+    attributes:
+      label: Checklist
+      description: This is the final confirmation of the report.
+      options:
+        - label: I follow the contribution guidelines.
+          required: true
+        - label: I confirmed that there is no similar issues.
+          required: true
+        - label: I have checked that this issue does not contain any credentials or personal informations.
+          required: true
